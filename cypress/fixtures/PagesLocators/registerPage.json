@@ -1,5 +1,13 @@
 {
     "url" : "http://demo.automationtesting.in/Register.html",
     "fNameLocator" : ":nth-child(1) > :nth-child(2) > .form-control",
-    "lNameLocator" : ":nth-child(1) > :nth-child(3) > .form-control"
+    "lNameLocator" : ":nth-child(1) > :nth-child(3) > .form-control",
+    "addressLocator" : ".col-md-8 > .form-control",
+    "emailLocator" : "#eid > .form-control",
+    "phoneLocator" : ":nth-child(4) > .col-md-4 > .form-control",
+    "gendreMale" : "input[value=Male]",
+    "gendreFemale" : "input[value=FeMale]",
+    "cricketLocator" : "#checkbox1",
+    "moviesLocator" : "#checkbox2",
+    "hockeyLocator" : "#checkbox3"
 }

@@ -1,4 +1,7 @@
 {
     "fName" : "Swapnil",
-    "lName" : "Kale"
+    "lName" : "Kale",
+    "address" : "Ambegaon BK, Pune, 411046",
+    "email" : "abc@example.com",
+    "phone" : "9876543210"
 }
