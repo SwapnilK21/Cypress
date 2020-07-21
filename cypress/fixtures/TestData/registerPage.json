@@ -3,5 +3,15 @@
     "lName" : "Kale",
     "address" : "Ambegaon BK, Pune, 411046",
     "email" : "abc@example.com",
-    "phone" : "9876543210"
+    "phone" : "9876543210",
+    "gendre" : "Male",
+    "hobbies" : ["Cricket","Hockey"],
+    "languages" : ["English","Hindi"],
+    "skill" : "Javascript",
+    "country" : "India",
+    "searchCountry" : "India",
+    "year" : "1991",
+    "month" : "September",
+    "day" : "21",
+    "password" : "Password@123"
 }

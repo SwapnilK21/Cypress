@@ -5,9 +5,6 @@ import {RegisterPage} from "../Pages/RegisterPage";
 describe("User registration",() => {
 
     before( () => {
-        cy.fixture('/PagesLocators/registerPage').then(function (data) {
-           locators=data
-        })
         cy.fixture('/TestData/registerPage').then(function (data) {
             tdata=data
         })
@@ -15,13 +12,21 @@ describe("User registration",() => {
 
     it('Registration Page', () => {
         let rp =new RegisterPage();        
-        rp.openUrl(locators.url);
-        rp.firstName(locators.fNameLocator,tdata.fName)
-        rp.lastName(locators.lNameLocator,tdata.lName);
-        rp.address(locators.addressLocator,tdata.address);
-        rp.email(locators.emailLocator,tdata.email);
-        rp.phone(locators.phoneLocator,tdata.phone);
-        rp.selectGendreMale(locators.gendreMale);
-        
+        rp.openUrl();
+        rp.verifyTitle();
+        rp.firstName(tdata.fName)
+        rp.lastName(tdata.lName);
+        rp.address(tdata.address);
+        rp.email(tdata.email);
+        rp.phone(tdata.phone);
+        rp.selectGendre(tdata.gendre);
+        rp.selectHobbies(tdata.hobbies);
+        rp.selectLanguages(tdata.languages);
+        rp.selectSkills(tdata.skill);
+        rp.Country(tdata.country);
+        rp.selectCountry(tdata.searchCountry);
+        rp.selectDOB(tdata.year,tdata.month,tdata.day);
+        rp.password(tdata.password)
+        rp.submit().xyz();
     })
 })
