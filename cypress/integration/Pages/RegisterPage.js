@@ -21,8 +21,8 @@ var dayLocator="#daybox";
 var firstPasswordLocator="#firstpassword";
 var secondPasswordLocator="#secondpassword";
 var refreshLocator="#Button1";
-var msg="Test Started...!";
-var l;
+const profilePic="profile_pic.jpg"
+
 import { signinPage } from "../Pages/signinPage";
 
 export class RegisterPage {
@@ -106,6 +106,10 @@ export class RegisterPage {
 
     refresh(){
         cy.get(refreshLocator).click();
+    }
+
+    photoUpload(){
+        cy.get("#imagesrc").attachFile(profilePic);
     }
 
     submit() {

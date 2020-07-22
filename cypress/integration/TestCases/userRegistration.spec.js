@@ -27,9 +27,10 @@ describe("User registration",() => {
         rp.selectCountry(tdata.searchCountry);
         rp.selectDOB(tdata.year,tdata.month,tdata.day);
         rp.password(tdata.password)
-        rp.submit().xyz();
-        let tm = new TopMenu();
-        tm.webTable();
-        tm.register();
+        rp.photoUpload();
+        // rp.submit().xyz();
+        // let tm = new TopMenu();
+        // tm.webTable();
+        // tm.register();
     })
 })
