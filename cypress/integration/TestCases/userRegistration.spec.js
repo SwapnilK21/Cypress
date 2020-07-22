@@ -1,7 +1,7 @@
 /// <reference types="cypress"/>
 let tdata;
-let locators;
 import {RegisterPage} from "../Pages/RegisterPage";
+import { TopMenu } from "../Pages/TopMenu";
 describe("User registration",() => {
 
     before( () => {
@@ -11,7 +11,7 @@ describe("User registration",() => {
     })
 
     it('Registration Page', () => {
-        let rp =new RegisterPage();        
+        let rp =new RegisterPage();     
         rp.openUrl();
         rp.verifyTitle();
         rp.firstName(tdata.fName)
@@ -28,5 +28,8 @@ describe("User registration",() => {
         rp.selectDOB(tdata.year,tdata.month,tdata.day);
         rp.password(tdata.password)
         rp.submit().xyz();
+        let tm = new TopMenu();
+        tm.webTable();
+        tm.register();
     })
 })

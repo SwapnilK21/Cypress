@@ -21,14 +21,14 @@ var dayLocator="#daybox";
 var firstPasswordLocator="#firstpassword";
 var secondPasswordLocator="#secondpassword";
 var refreshLocator="#Button1";
-
+var msg="Test Started...!";
+var l;
 import { signinPage } from "../Pages/signinPage";
 
 export class RegisterPage {
 
     openUrl() {
         cy.visit(url);
-        // locators="d";
     }
 
     verifyTitle(){

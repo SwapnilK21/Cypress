@@ -9,5 +9,6 @@
     "gendreFemale" : "input[value=FeMale]",
     "cricketLocator" : "#checkbox1",
     "moviesLocator" : "#checkbox2",
-    "hockeyLocator" : "#checkbox3"
+    "hockeyLocator" : "#checkbox3",
+    "s" : "Swapnil"
 }
